@@ -1,0 +1,1 @@
+# Scripts-Para-Traducci-n-Deltarune
