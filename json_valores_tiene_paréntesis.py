@@ -102,12 +102,13 @@ def main():
             advertencias_signos_paréntesis[clave] = rf"{data[clave]}"
         if not tiene_cerrado_los_signos(data[clave], "¡", "!"):
             advertencias_signos_exclamación[clave] = rf"{data[clave]}"
+    advertencias_unificadas = {
+        **advertencias_signos_exclamación,
+        **advertencias_signos_pregunta,
+        **advertencias_signos_paréntesis,
+    }
     if args.solo_claves:
-        for clave in advertencias_signos_exclamación:
-            print(clave)
-        for clave in advertencias_signos_pregunta:
-            print(clave)
-        for clave in advertencias_signos_paréntesis:
+        for clave in advertencias_unificadas:
             print(clave)
     else:
         print_in_table(
