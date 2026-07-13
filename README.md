@@ -18,6 +18,8 @@ Actualmente verifica:
 - Signos de interrogación (`¿ ?`)
 - Signos de exclamación (`¡ !`)
 - Paréntesis (`( )`)
+- Mayúsculas después de puntos
+- Minusculas despues de coma
 
 Es especialmente útil para revisar archivos de traducción o localización antes de publicarlos.
 
@@ -53,6 +55,27 @@ o
 ```bash
 python main.py archivo.json -c
 ```
+
+## Modo interactivo
+
+| Este modo permite editar los textos con errores comodamente por la terminal.
+
+```bash
+python main.py archivo.json --solo_claves
+```
+
+o
+
+```bash
+python main.py archivo.json -c
+```
+Salida de ejemplo:
+
+```bash
+¿Hola como estas?!
+Su correción: ¿Hola como estas?! #Aquí podrías editar el diálogo
+```
+
 
 ## Formato esperado
 
