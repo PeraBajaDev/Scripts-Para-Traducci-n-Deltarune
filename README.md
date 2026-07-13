@@ -47,7 +47,7 @@ dialog.hello              ¿Cómo estás
 ## Mostrar solo las claves con errores
 
 ```bash
-python main.py archivo.json --solo_claves
+python main.py archivo.json -solo_claves
 ```
 
 o
@@ -61,13 +61,13 @@ python main.py archivo.json -c
 | Este modo permite editar los textos con errores comodamente por la terminal.
 
 ```bash
-python main.py archivo.json --solo_claves
+python main.py archivo.json -interactivo
 ```
 
 o
 
 ```bash
-python main.py archivo.json -c
+python main.py archivo.json -i
 ```
 Salida de ejemplo:
 
